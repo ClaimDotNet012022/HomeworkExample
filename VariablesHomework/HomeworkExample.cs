@@ -21,6 +21,9 @@ namespace VariablesExample
             // is true, but the condition is false,
             // so the test will not pass.
             Assert.IsTrue(100 == 100);
+
+
+
         }
 
     }
