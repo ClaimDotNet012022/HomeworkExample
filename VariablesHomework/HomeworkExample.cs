@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace VariablesExample
 {
@@ -8,7 +9,19 @@ namespace VariablesExample
         [TestMethod]
         public void Declaration()
         {
-            //Assert.IsTrue(foo == 25); // Make this passS
+            // This line contains a syntax error.
+            // It prevents the solution from building,
+            // so it will not pass.
+            Console.WriteLine("Hello World);
+
+
+
+            // Once the above error is fixed, and the
+            // project builds, this line contains a
+            // logical error - it "asserts" that a condition
+            // is true, but the condition is false,
+            // so the test will not pass.
+            Assert.IsTrue(1 == 2);
         }
 
     }
