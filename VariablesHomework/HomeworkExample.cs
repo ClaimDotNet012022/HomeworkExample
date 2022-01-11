@@ -14,6 +14,7 @@ namespace VariablesExample
             // so it will not pass.
             Console.WriteLine("Hello World");
 
+            // This is another change
 
 
             // Once the above error is fixed, and the
